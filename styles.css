@@ -1,3 +1,24 @@
+:root {
+    --font-size-default: 1rem; /* 16px */
+    --font-size-subtitle: 1.25rem; /* 20px */
+    --font-size-title: 3.75rem; /* 30px */
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Work Sans';
+    src: url(./assets/fonts/WorkSans-Italic-VariableFont_wght.ttf);
+}
+
+html {
+    font-size: 100%; /* 16px */
+}
+
 body {
     height: 100vh;
     display: flex;
@@ -7,4 +28,17 @@ body {
     background: url(./assets/images/background-pattern-desktop.svg);
     background-repeat: no-repeat;
     background-size: 100%;
+
+    font-family: 'Work Sans', sans-serif;
+}
+
+.faq-container {
+    width: 600px;
+    background-color: white;
+    margin: auto auto;
+}
+
+.main-title {
+    display: inline-block;
+    font-size: var(--font-size-title);
 }
